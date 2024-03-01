@@ -13,7 +13,7 @@ function page({ }: Props) {
 
     return (
         <div className='relative w-full min-h-[70rem] my-auto mx-auto '>
-            <img src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' className='absolute top-0 left-0 z-0'></img>
+            <img src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' alt="..." className='absolute top-0 left-0 z-0'></img>
             <div className='mt-12  mx-auto w-full xl:w-8/12 lg:w-9/12 md:w-10/12 sm:w-full  z-10  flex flex-col justify-center items-center m-6'>
                 <aside className='mb-6 z-10'>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" width={300}
@@ -64,7 +64,7 @@ function page({ }: Props) {
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176204.381507439!2d47.866981663027936!3d46.365549549758015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90584a786c9ed%3A0x5a2144fabe5dcac2!2sAstrakhan%2C%20Astrakhan%20Oblast!5e0!3m2!1sen!2sru!4v1708962721354!5m2!1sen!2sru" className=' z-10 rounded-lg shadow-lg ring-2 ring-blue-500 w-11/12 h-72 ' loading="lazy" style={{ zoom: 1.5 }} ></iframe>
 
             </div>
-            <img src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' className='absolute bottom-60 rotate-180 right-0 z-0'></img>
+            <img alt="..." src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' className='absolute bottom-60 rotate-180 right-0 z-0'></img>
         </div>
     )
 }

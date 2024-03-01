@@ -20,20 +20,20 @@ function Hero({ }: Props) {
                 <div className='w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4 flex justify-center items-center gap-2 mt-3 mx-auto'>
                     {/* image grid 1 */}
                     <div className=' grid gap-2 translate-y-4'>
-                        <img className='rounded-lg' height={300} width={150} src={rosegirl1.src}></img>
-                        <img className='rounded-lg' height={300} width={150} src={rosegirl4.src}></img>
+                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl1.src}></img>
+                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl4.src}></img>
 
                     </div>
                     {/* image grid 2 */}
                     <div className=' grid gap-2  -translate-y-12'>
-                        <img className='rounded-lg' height={300} width={150} src={rosegirl2.src}></img>
-                        <img className='rounded-lg' height={300} width={150} src={rosegirl5.src}></img>
+                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl2.src}></img>
+                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl5.src}></img>
 
                     </div>
                     {/* image grid 3*/}
                     <div className=' grid gap-2 -translate-y-4 '>
-                        <img className='rounded-lg' height={300} width={150} src={rosegirl3.src}></img>
-                        <img className='rounded-lg' height={300} width={150} src={rosegirl6.src}></img>
+                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl3.src}></img>
+                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl6.src}></img>
 
                     </div>
 

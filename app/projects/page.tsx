@@ -5,7 +5,6 @@ import { useGetFileQuery } from '../api/redux/PhotosApi'
 type Props = {}
 
 function page({ }: Props) {
-    const { data, isLoading, isSuccess } = useGetFileQuery('1BjHHVo71U7cgpVXMowQ1HfhAXq7INhwd')
     return (
         <div className='mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full px-4 mt-10'>
             <h1 className='text-5xl boujee-text font-extrabold text-center py-2 font-logo underline '>Here Are Some of My Projects</h1>
