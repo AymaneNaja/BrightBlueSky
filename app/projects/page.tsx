@@ -18,9 +18,7 @@ function page({ }: any) {
             <h1 className='text-5xl boujee-text font-extrabold text-center py-2 font-logo underline '>Here Are Some of My Projects</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 ">
                 <div className="grid gap-4">
-                    {isSuccess ? data.map((image: ImageType) => {
-                        return <div></div>
-                    }) : null}
+
                 </div>
             </div>
 
