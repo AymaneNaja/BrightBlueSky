@@ -11,7 +11,7 @@ type ImageType = {
     title: string
 }
 function page({ }: any) {
-    const { data, isSuccess, isLoading, isError } = useGetAllImagesQuery('')
+
 
     return (
         <div className='mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full px-4 mt-10'>
@@ -19,7 +19,7 @@ function page({ }: any) {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 ">
                 <div className="grid gap-4">
                     {isSuccess ? data.map((image: ImageType) => {
-                        return <img className="h-auto max-w-full rounded-lg" alt="..." src={image.src}></img>
+                        return <div></div>
                     }) : null}
                 </div>
             </div>
