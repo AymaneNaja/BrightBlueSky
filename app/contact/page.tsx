@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
 import { TileLayer, Marker, MapContainer } from 'react-leaflet';
 import { LatLngExpression } from 'leaflet';
+import Image from 'next/image';
 type Props = {}
 
 
@@ -13,7 +14,7 @@ function page({ }: Props) {
 
     return (
         <div className='relative w-full min-h-[70rem] my-auto mx-auto '>
-            <img src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' alt="..." className='absolute top-0 left-0 z-0'></img>
+            <Image width={300} height={300} alt="..." src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' className='absolute top-0 left-0 z-0'></Image>
             <div className='mt-12  mx-auto w-full xl:w-8/12 lg:w-9/12 md:w-10/12 sm:w-full  z-10  flex flex-col justify-center items-center m-6'>
                 <aside className='mb-6 z-10'>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" width={300}
@@ -26,7 +27,7 @@ function page({ }: Props) {
                 </aside>
                 <h1 className='text-5xl font-extrabold boujee-text z-10   last:text-red-500  font-sans'>Get in touch with us</h1>
                 <p className='font-italic text-slate-500 text-xl w-8/12  z-10 text-center py-4 font-semibold'>{`we're all ears and lenses! Let's turn your wildest photography dreams into vibrant realities. Get in touch today and let the fun begin!`}</p>
-                <section className='grid  grid-cols-2 mb-16 gap-4  z-10 translate-x-8'>
+                <section className='grid  grid-cols-2 mb-16 gap-4  z-10 translate-x-8 mt-4'>
                     {/* email */}
                     <div className='flex gap-3 justify-start items-center  w-fit p-2'>
                         <i className='bg-rose-500 text-white rounded-full p-3'><MdEmail size={25} /></i>
@@ -57,14 +58,14 @@ function page({ }: Props) {
                         <i className=' text-white rounded-full   w-[50px] h-[50px]   '><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" data-name="Layer 1" viewBox="0 0 128 128" id="instagram"><defs><clipPath id="b"><circle cx="64" cy="64" r="64" fill="none"></circle></clipPath><clipPath id="c"><path fill="none" d="M104-163H24a24.07 24.07 0 0 0-24 24v80a24.07 24.07 0 0 0 24 24h80a24.07 24.07 0 0 0 24-24v-80a24.07 24.07 0 0 0-24-24Zm16 104a16 16 0 0 1-16 16H24A16 16 0 0 1 8-59v-80a16 16 0 0 1 16-16h80a16 16 0 0 1 16 16Z"></path></clipPath><clipPath id="e"><circle cx="82" cy="209" r="5" fill="none"></circle></clipPath><clipPath id="g"><path fill="none" d="M64-115a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16Zm0 24a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8Z"></path></clipPath><clipPath id="h"><path fill="none" d="M84-63H44a16 16 0 0 1-16-16v-40a16 16 0 0 1 16-16h40a16 16 0 0 1 16 16v40a16 16 0 0 1-16 16Zm-40-64a8 8 0 0 0-8 8v40a8 8 0 0 0 8 8h40a8 8 0 0 0 8-8v-40a8 8 0 0 0-8-8Z"></path></clipPath><clipPath id="i"><circle cx="82" cy="-117" r="5" fill="none"></circle></clipPath><radialGradient id="a" cx="27.5" cy="121.5" r="137.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd676"></stop><stop offset=".25" stop-color="#f2a454"></stop><stop offset=".38" stop-color="#f05c3c"></stop><stop offset=".7" stop-color="#c22f86"></stop><stop offset=".96" stop-color="#6666ad"></stop><stop offset=".99" stop-color="#5c6cb2"></stop></radialGradient><radialGradient id="d" cx="27.5" cy="-41.5" r="148.5" xlinkHref="#a"></radialGradient><radialGradient id="f" cx="13.87" cy="303.38" r="185.63" xlinkHref="#a"></radialGradient><radialGradient id="j" cx="13.87" cy="-22.62" r="185.63" xlinkHref="#a"></radialGradient></defs><g clip-path="url(#b)"><circle cx="27.5" cy="121.5" r="137.5" fill="url(#a)"></circle></g><g clip-path="url(#c)"><circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)"></circle></g><g clip-path="url(#e)"><circle cx="13.87" cy="303.38" r="185.63" fill="url(#f)"></circle></g><g clip-path="url(#g)"><circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)"></circle></g><g clip-path="url(#h)"><circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)"></circle></g><g clip-path="url(#i)"><circle cx="13.87" cy="-22.62" r="185.63" fill="url(#j)"></circle></g><circle cx="82" cy="46" r="5" fill="#fff"></circle><path fill="#fff" d="M64 48a16 16 0 1 0 16 16 16 16 0 0 0-16-16Zm0 24a8 8 0 1 1 8-8 8 8 0 0 1-8 8Z"></path><rect width="64" height="64" x="32" y="32" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="8" rx="12" ry="12"></rect></svg></i>
                         <span>
                             <h3 className='text-lg text-slate-400 font-semibold'>Instagram</h3>
-                            <p className='font-bold '>@brightblusky17</p>
+                            <a className='font-bold hover:text-blue-500 hover:boujee-text transition-all  ' href='https://www.instagram.com/brightbluesky17/'>@brightblusky17</a>
                         </span>
                     </div>
                 </section>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176204.381507439!2d47.866981663027936!3d46.365549549758015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a90584a786c9ed%3A0x5a2144fabe5dcac2!2sAstrakhan%2C%20Astrakhan%20Oblast!5e0!3m2!1sen!2sru!4v1708962721354!5m2!1sen!2sru" className=' z-10 rounded-lg shadow-lg ring-2 ring-blue-500 w-11/12 h-72 ' loading="lazy" style={{ zoom: 1.5 }} ></iframe>
 
             </div>
-            <img alt="..." src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' className='absolute bottom-60 rotate-180 right-0 z-0'></img>
+            <Image width={300} height={300} alt="..." src='https://shuffle.dev/saturn-assets/images/contact/light-left-blue.png' className='absolute bottom-80 rotate-180 right-0 z-0'></Image>
         </div>
     )
 }

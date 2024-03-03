@@ -6,18 +6,24 @@ type Props = {}
 
 function Biography({ }: Props) {
     const [showMore, setShowMore] = useState(false)
+    const [loaded, setLoaded] = useState(false)
+
     return (
         <section className='bg-sky-50'>
             <div className='mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full '>
                 <div className={' w-full flex justify-center items-center my-10 mx-auto gap-4 px-4 xl:w-10/12 sm:w-full md:w-full lg:w-full  py-10  transition-all'} >
                     <div className='w-2/4 xl:w-1/4 h-fit mx-auto relative flex flex-col justify-center items-center '>
-                        <Image alt={'...'} width={500} height={500} src={John.src} className='rounded-lg shadow w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-full mx-auto' />
+                        <div className='w-full'>
+                            {!loaded ?
+                                <div className={`bg-slate-400 animate-pulse rounded-lg  w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-full mx-auto min-h-80 h-full `}></div> : null}
+                            <Image priority alt={'...'} onLoad={(e) => setLoaded(true)} width={500} height={500} src={John.src} className={`rounded-lg shadow w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-full mx-auto ${!loaded ? 'hidden' : 'block show-content'} `} />
+                        </div>
                         <div className=' w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-9/12  text-center  absolute -bottom-6    '>
                             <p className='w-10/12 mx-auto boujee-bg text-white text-lg md:text-xl lg:text-xl xl:text-xl sm:text-lg font-extrabold shadow rounded py-2 px-6'>Wambua John Mutua</p>
                         </div>
                     </div>
                     <div className=' flex flex-col justify-start items-start gap-2 w-2/4 mx-auto  '>
-                        <h1 className='text-5xl font-bold boujee-text font-sans '>A little bit about me...</h1>
+                        <h1 className='text-5xl font-bold boujee-text font-sans '>A Little Bit About Me...</h1>
                         <p className={`${showMore ? 'line-clamp-none' : 'line-clamp-6'} transition-all font-semibold   text-slate-500 w-fit`}>
                             {`
 Hello there, I'm John, a 25-year-old photographer with an insatiable passion for capturing life's fleeting moments. Ever since I can remember, I've been enchanted by the magic of photography – the way it freezes time, preserves memories, and allows us to relive precious moments again and again.

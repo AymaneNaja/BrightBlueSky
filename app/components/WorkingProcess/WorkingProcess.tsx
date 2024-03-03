@@ -6,7 +6,7 @@ import Victoria4 from '../../../photos/portfolio/VICTORIA-42.jpg'
 import Victoria5 from '../../../photos/portfolio/VICTORIA-43.jpg'
 import Victoria6 from '../../../photos/portfolio/VICTORIA-35.jpg'
 import Victoria7 from '../../../photos/portfolio/VICTORIA-37.jpg'
-import Image from 'next/image'
+import WorkingProcessImg from './WorkingProcessImg'
 type Props = {}
 
 
@@ -64,20 +64,13 @@ function WorkingProcess({ }: Props) {
                 </ul>
                 <div className='w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4  grid grid-cols-3 justify-center items-center gap-2 mt-3 grid-rows-4  min-h-[700px]   mx-auto min-w-[300px]'>
                     {/* image grid 1 */}
-
-                    <div style={{ backgroundImage: `url(${Victoria2.src})` }} className='rounded col-span-2 row-span-2 w-full h-full bg-center bg-cover'>
-                    </div>
-                    <div style={{ backgroundImage: `url(${Victoria5.src})` }} className='rounded  w-full h-full bg-center bg-cover'></div>
-                    <div style={{ backgroundImage: `url(${Victoria3.src})` }} className='rounded  w-full h-full bg-center bg-cover'></div>
-                    <div style={{ backgroundImage: `url(${Victoria4.src})` }} className='rounded row-span-1 col-span-1  w-full h-full bg-center bg-cover'></div>
-
-
-                    <div style={{ backgroundImage: `url(${Victoria7.src})` }} className='rounded  col-span-2 row-span-1 w-full h-full bg-center bg-cover'></div>
-                    <div style={{ backgroundImage: `url(${Victoria1.src})` }} className='rounded  col-span-2 row-span-1 w-full h-full bg-center bg-cover'></div>
-                    <div style={{ backgroundImage: `url(${Victoria6.src})` }} className='rounded  col-span-1 row-span-1 w-full h-full bg-center bg-cover'></div>
-                    {/* <img className='rounded' height={300} width={150} src={Victoria6.src}></img> */}
-
-
+                    <WorkingProcessImg image={Victoria2} styling='rounded col-span-2 row-span-2 w-full h-full bg-center bg-cover' />
+                    <WorkingProcessImg image={Victoria5} styling='rounded  w-full h-full bg-center bg-cover' />
+                    <WorkingProcessImg image={Victoria3} styling='rounded  w-full h-full bg-center bg-cover' />
+                    <WorkingProcessImg image={Victoria4} styling='rounded row-span-1 col-span-1  w-full h-full bg-center bg-cover' />
+                    <WorkingProcessImg image={Victoria7} styling='rounded  col-span-2 row-span-1 w-full h-full bg-center bg-cover' />
+                    <WorkingProcessImg image={Victoria1} styling='rounded  col-span-2 row-span-1 w-full h-full bg-center bg-cover' />
+                    <WorkingProcessImg image={Victoria6} styling='rounded  col-span-1 row-span-1 w-full h-full bg-center bg-cover' />
                 </div>
 
             </div>

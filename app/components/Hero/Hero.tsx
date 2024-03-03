@@ -1,13 +1,17 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import rosegirl1 from '../../../photos/portfolio/Rosegirl1.jpg'
 import rosegirl2 from '../../../photos/portfolio/Rosegirl2.jpg'
 import rosegirl3 from '../../../photos/portfolio/Rosegirl3.jpg'
 import rosegirl4 from '../../../photos/portfolio/Rosegirl4.jpg'
 import rosegirl5 from '../../../photos/portfolio/Rosegirl5.jpg'
 import rosegirl6 from '../../../photos/portfolio/Rosegirl6.jpg'
+import Image from 'next/image'
+import HeroImage from './HeroImage'
 type Props = {}
 
 function Hero({ }: Props) {
+    const [loaded, setLoaded] = useState(false)
 
     return (
         <div className=' mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full'>
@@ -20,21 +24,21 @@ function Hero({ }: Props) {
                 <div className='w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4 flex justify-center items-center gap-2 mt-3 mx-auto'>
                     {/* image grid 1 */}
                     <div className=' grid gap-2 translate-y-4'>
-                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl1.src}></img>
-                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl4.src}></img>
+                        <HeroImage src={rosegirl1.src} />
+                        <HeroImage src={rosegirl4.src} />
 
                     </div>
                     {/* image grid 2 */}
                     <div className=' grid gap-2  -translate-y-12'>
-                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl2.src}></img>
-                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl5.src}></img>
+                        <HeroImage src={rosegirl2.src} />
+                        <HeroImage src={rosegirl5.src} />
+
 
                     </div>
                     {/* image grid 3*/}
                     <div className=' grid gap-2 -translate-y-4 '>
-                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl3.src}></img>
-                        <img alt={'...'} className='rounded-lg' height={300} width={150} src={rosegirl6.src}></img>
-
+                        <HeroImage src={rosegirl3.src} />
+                        <HeroImage src={rosegirl6.src} />
                     </div>
 
                 </div>

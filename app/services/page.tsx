@@ -75,7 +75,7 @@ const page = (props: Props) => {
                                             points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                                     </svg>
                                 </span>
-                                Personalized Attentiont
+                                Personalized Attention
                             </li>
                             <li className="flex items-start">
                                 <span className="mr-1">
