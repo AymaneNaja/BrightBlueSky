@@ -15,6 +15,8 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
+  picture: React.ReactNode;
+
 }>) {
   return (
     <html lang="en">
@@ -27,7 +29,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Navbar />
-          <div className={'min-h-[60rem]'}>{children}</div>
+          <div className={'min-h-[60rem]'}>{children}
+          </div>
           <Footer />
         </Providers>
       </body>

@@ -7,11 +7,14 @@ const PhotosApi = createApi({
     endpoints: (builder) => ({
         getAllImages: builder.query({
             query: () => ''
+        }),
+        getImageById: builder.query({
+            query: (id) => `/${id}`
         })
     })
 })
 
 
-export const { useGetAllImagesQuery } = PhotosApi
+export const { useGetAllImagesQuery, useGetImageByIdQuery } = PhotosApi
 
 export default PhotosApi
