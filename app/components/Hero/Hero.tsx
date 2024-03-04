@@ -21,7 +21,7 @@ function Hero({ }: Props) {
                     <h1 className=' w-fit boujee-text bg-clip-text text-transparent font-extrabold text-7xl'>Capture your beautiful memories</h1>
                     <p className='font-semibold text-slate-500 font-logo mt-4 leading-6' >Step into our world of creativity and innovation, where every image tells a story and every moment is cherished. Explore our portfolio to witness the magic of BrightBlueSky Photography and let us be the guardians of your most treasured memories. Welcome to a realm where the sky is always bright, and the possibilities are endless</p>
                 </div>
-                <div className='w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4 flex justify-center items-center gap-2 mt-3 mx-auto'>
+                <div className='w-full xs:mx-2 sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4 flex justify-center items-center gap-2 mt-3 mx-auto'>
                     {/* image grid 1 */}
                     <div className=' grid gap-2 translate-y-4'>
                         <HeroImage src={rosegirl1.src} />

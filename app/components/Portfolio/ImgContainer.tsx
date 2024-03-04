@@ -15,7 +15,7 @@ export default function ImgContainer({ photo, link }: any) {
             style={{ gridRow: `span ${photoSpans}` }}
         >
             <Link href={link} target="_blank" className="grid place-content-center">
-                <div className="rounded-xl hover:scale-95 transition-all overflow-hidden group">
+                <div className="rounded-xl hover:scale-95 transition-all hover:border-2 hover:border-blue-500 overflow-hidden group">
                     {!loaded ?
                         <div style={{ height: photo.Height, width: photo.Width }} className={` bg-slate-300 animate-pulse rounded-xl py-2 max-h-[385px] `}></div> : null}
                     <Image

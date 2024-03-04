@@ -25,9 +25,9 @@ function page({ }: Props) {
                         </g>
                     </svg>
                 </aside>
-                <h1 className='text-5xl font-extrabold boujee-text z-10   last:text-red-500  font-sans'>Get in touch with us</h1>
+                <h1 className='text-5xl font-extrabold boujee-text z-10   last:text-red-500  font-sans text-center'>Get in touch with us</h1>
                 <p className='font-italic text-slate-500 text-xl w-8/12  z-10 text-center py-4 font-semibold'>{`we're all ears and lenses! Let's turn your wildest photography dreams into vibrant realities. Get in touch today and let the fun begin!`}</p>
-                <section className='grid  grid-cols-2 mb-16 gap-4  z-10 translate-x-8 mt-4'>
+                <section className='grid xs:grid-col-1  xs:px-4 px-4 sm:p-0 md:p-0 lg:p-0 xl:p-0  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mb-16 gap-4  z-10 justify-center items-center mx-auto mt-4 w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-6/12 translate-x-1 sm:translate-x-8 md:translate-x-8 lg:translate-x-10 xl:translate-x-12 '>
                     {/* email */}
                     <div className='flex gap-3 justify-start items-center  w-fit p-2'>
                         <i className='bg-rose-500 text-white rounded-full p-3'><MdEmail size={25} /></i>
