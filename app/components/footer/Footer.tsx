@@ -4,7 +4,7 @@ type Props = {}
 
 function Footer({ }: Props) {
     return (
-        <footer className="footer footer-center p-8 bg-primary text-primary-content border mt-20">
+        <footer className="footer footer-center p-8 bg-white text-black border mt-20">
             <aside>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" width={200}
                     height={100} viewBox="0 0 3448.103660698048 1254.6902499545322">
