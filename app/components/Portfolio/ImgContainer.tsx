@@ -11,11 +11,12 @@ export default function ImgContainer({ photo, link }: any) {
     const photoSpans = Math.ceil(galleryHeight / 10) + 1
     const [loaded, setLoaded] = useState(false)
     return (
-        <div className="xs:w-full w-[250px] justify-self-start sm:justify-self-center md:justify-self-center lg:justify-self-center  xl:justify-self-center "
+        <div className="xs:w-full w-[250px] justify-self-center "
             style={{ gridRow: `span ${photoSpans}` }}
         >
             <Link href={link} target="_blank" className="grid place-content-center">
-                <div className="rounded-xl scale-[0.85] sm:scale-95 md:scale-90 lg:scale-90 xl-scale-95  hover:scale-90 transition-all hover:border-2 hover:border-blue-500 overflow-hidden group">
+                <div className="rounded-xl scale-105
+                sm:scale-95 md:scale-90 lg:scale-90 xl:scale-90  hover:-translate-y-2 transition-all  overflow-hidden group">
                     {!loaded ?
                         <div style={{ height: photo.Height, width: photo.Width }} className={` bg-slate-300 animate-pulse rounded-xl  max-h-[385px] `}></div> : null}
                     <Image
