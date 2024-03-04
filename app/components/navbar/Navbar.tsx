@@ -9,7 +9,7 @@ type Props = {}
 function Navbar({ }: Props) {
     const pathname = usePathname()
     return (
-        <div className=" flex justify-between  w-full px-2 sm:px-2 md:px-4 lg:px-6 xl:px-8">
+        <div className=" flex justify-between  w-full px-2 sm:px-2 md:px-4 lg:px-6 xl:px-8 bg-white">
             <Link href={'/'} className='hover:scale-110 cursor-pointer transition-all'><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" width="120"
                 height="50" viewBox="0 0 3448.103660698048 1254.6902499545322">
                 <g transform="scale(22.40518303490236) translate(10, 10)">

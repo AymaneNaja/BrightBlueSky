@@ -26,7 +26,7 @@ function Biography({ }: Props) {
                         <h1 className='text-5xl font-bold boujee-text font-sans '>A Little Bit About Me...</h1>
                         <p className={`${showMore ? 'line-clamp-none' : 'line-clamp-6'} transition-all font-semibold   text-slate-500 w-fit`}>
                             {`
-Hello there, I'm John, a 25-year-old photographer with an insatiable passion for capturing life's fleeting moments. Ever since I can remember, I've been enchanted by the magic of photography – the way it freezes time, preserves memories, and allows us to relive precious moments again and again.
+Hello there, I'm John, a 23-year-old photographer with an insatiable passion for capturing life's fleeting moments. Ever since I can remember, I've been enchanted by the magic of photography – the way it freezes time, preserves memories, and allows us to relive precious moments again and again.
 
 Growing up, I was always the one with a camera in hand, eager to document every adventure, every smile, and every sunset. As I delved deeper into the world of photography, I realized that it wasn't just a hobby for me – it was a calling, a way to express myself and connect with the world around me in ways I never thought possible.
 

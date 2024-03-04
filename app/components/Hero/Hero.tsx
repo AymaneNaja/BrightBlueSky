@@ -14,7 +14,7 @@ function Hero({ }: Props) {
     const [loaded, setLoaded] = useState(false)
 
     return (
-        <div className=' mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full'>
+        <div className=' mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full bg-white'>
 
             <div className='my-20 xl:w-10/12 mx-auto px-4 grid sm:grid justify-center items-center gap-8 sm:gap-8 md:gap-4 lg:gap-4 xl:gap-4  md:flex lg:flex xl:flex '>
                 <div className='w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4 grid mx-auto mb-8'>
