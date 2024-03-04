@@ -12,7 +12,7 @@ function HeroImage({ src }: Props) {
   return (
     <>
       {!loaded ?
-        <div className=" bg-slate-300 animate-pulse rounded-lg w-[150px] h-[220px]"></div> : null}
+        <div className=" bg-slate-300 animate-pulse rounded-lg xs:w-[100px] xs:h-[150px] w-[150px] h-[220px]"></div> : null}
       <Image priority alt={'...'} onLoad={(e) => setLoaded(true)}
         className={`rounded-lg ${!loaded ? 'hidden' : 'block show-content'}  `} height={300} width={150} src={src}></Image>
     </>

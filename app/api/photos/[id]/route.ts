@@ -5,7 +5,7 @@ import { NextResponse, NextRequest } from "next/server";
 
 
 
-export async function GET(req: NextApiRequest, { params }: { params: { id: string } }) {
+export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
     const supabase = createClient();
     const { data, error } = await supabase.from("Images").select().eq('id', params.id);
     if (error) {

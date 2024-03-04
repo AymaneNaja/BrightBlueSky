@@ -15,7 +15,7 @@ function Biography({ }: Props) {
                     <div className='w-2/4 xl:w-1/4 h-fit mx-auto relative flex flex-col justify-center items-center '>
                         <div className='w-full'>
                             {!loaded ?
-                                <div className={`bg-slate-400 animate-pulse rounded-lg  w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-full mx-auto min-h-80 h-full `}></div> : null}
+                                <div className={`bg-slate-400 animate-pulse rounded-lg xs:w-9/12 w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-full mx-auto min-h-80 h-full `}></div> : null}
                             <Image priority alt={'...'} onLoad={(e) => setLoaded(true)} width={500} height={500} src={John.src} className={`rounded-lg shadow w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-full mx-auto ${!loaded ? 'hidden' : 'block show-content'} `} />
                         </div>
                         <div className=' w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-9/12  text-center  absolute -bottom-6    '>
