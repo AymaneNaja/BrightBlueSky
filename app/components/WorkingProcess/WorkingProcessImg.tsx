@@ -13,11 +13,11 @@ function WorkingProcessImg({ image, styling }: Props) {
 
     return (
         <>
-            <div style={{ backgroundImage: `url(${image.src})` }} className={`${styling} ${!loaded ? 'hidden' : 'block show-content'}`} />
+            <div style={{ backgroundImage: `url(${image.src})` }} className={`${styling} ${!loaded ? 'hidden' : 'block show-content'} rounded-xl`} />
             <Image priority alt={'...'} onLoad={(e) => setLoaded(true)}
-                className={`hidden`} height={300} width={150} src={image.src}></Image>
+                className={`hidden `} height={300} width={150} src={image.src}></Image>
             {!loaded ?
-                <div className={` bg-slate-300 animate-pulse rounded-lg ${styling}`}></div> : null}
+                <div className={` bg-slate-300 animate-pulse rounded-xl ${styling}`}></div> : null}
         </>
     )
 }
