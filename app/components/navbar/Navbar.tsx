@@ -9,7 +9,7 @@ type Props = {}
 function Navbar({ }: Props) {
     const pathname = usePathname()
     return (
-        <div className=" flex justify-between  w-full px-2 sm:px-2 md:px-4 lg:px-6 xl:px-8 bg-white">
+        <div className=" flex justify-between  w-full px-1 sm:px-2 md:px-4 lg:px-6 xl:px-8 bg-white">
             <Link href={'/'} className='hover:scale-110 cursor-pointer transition-all'><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" width="120"
                 height="50" viewBox="0 0 3448.103660698048 1254.6902499545322">
                 <g transform="scale(22.40518303490236) translate(10, 10)">
@@ -34,7 +34,7 @@ function Navbar({ }: Props) {
                 </ul>
             </div>
             <div className='dropdown pt-4'>
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle block sm:block md:hidden lg:hidden xl:hidden scale-110 ">
+                <div tabIndex={0} role="button" className=" cursor-pointer pr-2 block sm:block md:hidden lg:hidden xl:hidden scale-110 ">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </div>
                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3  -translate-x-32 z-20 p-2 shadow  rounded-box w-52 bg-white">
