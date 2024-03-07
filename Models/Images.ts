@@ -13,9 +13,7 @@ const PhotoSchema = z.object({
     width: z.number(),
     height: z.number(),
     url: z.string(),
-    src: z.object({
-        large: z.string(),
-    }),
+    src: z.string(),
     alt: z.string(),
     blurredDataUrl: z.string().optional(),
 })

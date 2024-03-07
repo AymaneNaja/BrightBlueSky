@@ -5,7 +5,7 @@ import Test from '../components/test/Test'
 import { useGetAllImagesQuery } from '../api/redux/PhotosApi'
 import Image from 'next/image'
 
-type ImageType = {
+export type ImageType = {
     id: string,
     created_at: Date,
     src: string,
@@ -17,9 +17,12 @@ function page({ }: any) {
 
 
     return (
-        <div className='mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full px-4 mt-10'>
-            <h1 className='text-5xl boujee-text font-extrabold text-center py-2 font-logo underline  '>Here Are Some of My Projects</h1>
-            <p className={`text-slate-500 font-bold text-center w-10/12 tracking-wide leading-relaxed mx-auto  py-4 `}>{portfolio_description}</p>
+        <div className='mx-auto w-full  mt-10'>
+            <div className={'mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full px'}>
+                <h1 className='text-5xl boujee-text font-extrabold text-center py-2 font-logo underline  '>Here Are Some of My Projects</h1>
+                <p className={`text-slate-500 font-bold text-center w-10/12 tracking-wide leading-relaxed mx-auto  py-4 `}>{portfolio_description}</p>
+
+            </div>
             <PortfolioImages />
         </div>
 

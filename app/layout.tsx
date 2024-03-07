@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Navbar />
-          <div className={'min-h-[60rem] bg-white'}>{children}
+          <div className={'min-h-[60rem]  bg-white'}>{children}
           </div>
           <Footer />
         </Providers>

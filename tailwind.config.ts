@@ -18,6 +18,8 @@ const config: Config = {
         'handwritten-1': ['Monotype Corsiva'],
         'handwritten-2': ['Comic Sans MS'],
         'handwritten-3': ['Bradley Hand ITC '],
+      }, gridTemplateColumns: {
+        'gallery': 'repeat(auto-fit, minmax(250px, 1fr))',
       }
     },
   },

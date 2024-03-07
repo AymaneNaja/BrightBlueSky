@@ -1,32 +1,34 @@
-'use client'
-import type { Photo } from "../../../Models/Images"
+import { ImageOverlayOptions } from "leaflet"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
 
+type ImageType = {
+    id: string,
+    created_at: Date,
+    src: string,
+    width: number,
+    height: number,
+    title: string
+}
+export default function ImgContainer({ photo }: any) {
 
-export default function ImgContainer({ photo, link }: any) {
-    const widthHeightRatio = photo.Height / photo.Width
+    const widthHeightRatio = photo.height / photo.width
     const galleryHeight = Math.ceil(250 * widthHeightRatio)
     const photoSpans = Math.ceil(galleryHeight / 10) + 1
-    const [loaded, setLoaded] = useState(false)
+
     return (
-        <div className="w-full sm:w-[250px] md:w-[250px] lg:w-[250px] xl:w-[250px] justify-self-center "
+        <div className="w-10/12 sm:w-[250px] justify-self-center"
             style={{ gridRow: `span ${photoSpans}` }}
         >
-            <Link href={link} target="_blank" className="grid place-content-center">
-                <div className="rounded-xl hover:opacity-70 scale-100
-                sm:scale-95 md:scale-90 lg:scale-90 xl:scale-90  transition-all  overflow-hidden group  ">
-                    {!loaded ?
-                        <div style={{ height: photo.Height, width: photo.Width }} className={` bg-slate-300 animate-pulse rounded-xl  my-1 sm:  max-h-[385px] `}></div> : null}
+            <Link href={photo.src} target="_blank" className="grid place-content-center">
+                <div className="rounded-xl overflow-hidden group">
                     <Image
-                        src={photo.link}
+                        src={photo.src}
                         alt={'...'}
-                        width={photo.Width}
-                        height={photo.Height}
-                        sizes="250px"
-                        className={`group-hover:opacity-75 show-content  `}
-                        onLoad={(e) => setLoaded(true)}
+                        width={photo.width}
+                        height={photo.height}
+                        sizes="(max-width:624px)400px,250px"
+                        className="group-hover:opacity-75 show-content"
                     />
                 </div>
             </Link>

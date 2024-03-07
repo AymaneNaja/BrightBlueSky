@@ -22,9 +22,9 @@ function WorkingProcess({ }: Props) {
             <div className='grid :sm:grid md:flex lg:flex xl:flex gap-8  w-11/12 sm:w-11/12 md:11/12 lg:w-10/12 xl:w-9/12 mx-auto'>
 
                 <ul className="w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4 mx-auto grid justify-start gap-4">
-                    <li className=" flex flex-col justify-start items-start w-full ">
+                    <li className=" flex flex-col justify-start items-start w-full  ">
                         <span className='w-full  my-2 font-bold text-xl flex justify-start items-center gap-2 '><label className='boujee-bg text-white p-2 rounded-full w-10 h-10  grid justify-center items-center'>1</label><h3 className='boujee-text text-3xl'>Client Consultation</h3></span>
-                        <ul className={'list-disc text-slate-600 font-semibold list  marker:text-blue-500 mt-2 pl-2  '}>
+                        <ul className={'list-disc text-slate-600 font-semibold list  marker:text-blue-500 mt-2 pl-2  space-y-2 '}>
                             <li>Meet with clients to discuss their photography needs, preferences, and vision</li>
                             <li>{`Discuss logistics such as location, date, time, and any special requests.`}</li>
                             <li>Provide guidance on styling, wardrobe, and props if needed...</li>
@@ -34,7 +34,7 @@ function WorkingProcess({ }: Props) {
                     {/*  */}
                     <li className="flex flex-col justify-start items-start w-full">
                         <span className=' font-bold text-xl flex justify-start items-center gap-2  my-2 '><label className='boujee-bg text-white p-2 rounded-full w-10 h-10 text-center grid justify-center items-center'>2</label><h3 className='boujee-text text-3xl'>Pre-Production Planning</h3></span>
-                        <ol className={'list-disc text-slate-600 font-semibold marker:text-blue-500 mt-2  pl-2 '}>
+                        <ol className={'list-disc text-slate-600 font-semibold marker:text-blue-500 mt-2  pl-2  space-y-2 '}>
                             <li>Develop a detailed plan based on the consultation, including shot lists, lighting setups, and equipment requirements.</li>
                             <li>Coordinate with other team members such as assistants, stylists, or makeup artists if necessary.</li>
                             <li>{`Scout locations for outdoor shoots or prepare the studio space, ensuring it's equipped and set up appropriately for the shoot.`}</li>
@@ -44,7 +44,7 @@ function WorkingProcess({ }: Props) {
                     {/*  */}
                     <li className="flex flex-col justify-start items-start w-full">
                         <span className=' font-bold text-xl flex justify-start items-center gap-2   my-2'><label className='boujee-bg text-white p-2 rounded-full w-10 h-10 text-center grid justify-center items-center '>3</label><h3 className='boujee-text text-3xl'>Photoshoot Execution</h3></span>
-                        <ol className={'list-disc text-slate-600 font-semibold marker:text-blue-500 mt-2  pl-2 '}>
+                        <ol className={'list-disc text-slate-600 font-semibold marker:text-blue-500 mt-2  pl-2   space-y-2'}>
                             <li>Set up the studio or location according to the pre-production plan.</li>
                             <li>Direct and pose subjects to achieve desired compositions and expressions.</li>
                             <li>Utilize professional lighting techniques to create the desired mood and ambiance.</li>
@@ -53,7 +53,7 @@ function WorkingProcess({ }: Props) {
                     </li>
                     <li className="flex flex-col justify-start items-start w-full">
                         <span className=' font-bold text-xl flex justify-start items-center gap-2  my-2'><label className='boujee-bg text-white p-2 rounded-full w-10 h-10 text-center grid justify-center items-center'>4</label><h3 className='boujee-text text-3xl'>Post-Production and Delivery</h3></span>
-                        <ol className={'list-disc text-slate-600 font-semibold marker:text-blue-500 pl-2 mt-2 '}>
+                        <ol className={'list-disc text-slate-600 font-semibold marker:text-blue-500 pl-2 mt-2  space-y-2'}>
                             <li>Select the best images from the shoot for further processing.</li>
                             <li>Retouch and edit selected photos to enhance their quality and aesthetics.</li>
                             <li>Utilize professional lighting techniques to create the desired mood and ambiance.</li>
@@ -62,7 +62,7 @@ function WorkingProcess({ }: Props) {
                         </ol>
                     </li>
                 </ul>
-                <div className='w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4  grid grid-cols-3 justify-center items-center gap-2 mt-3 grid-rows-4  min-h-[700px]   mx-auto min-w-[300px]'>
+                <div className='w-full sm:w-full md:w-2/4 lg:w-2/4 xl:w-2/4  grid grid-cols-3 justify-center items-center gap-2 mt-3 grid-rows-4   min-h-[700px]   mx-auto min-w-[300px]'>
                     {/* image grid 1 */}
                     <WorkingProcessImg image={Victoria2} styling='rounded col-span-2 row-span-2 w-full h-full bg-center bg-cover' />
                     <WorkingProcessImg image={Victoria5} styling='rounded  w-full h-full bg-center bg-cover' />
