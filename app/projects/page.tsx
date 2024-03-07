@@ -1,9 +1,6 @@
 import { PortfolioImages } from '../components/Portfolio/PortfolioImages';
 import React from 'react'
-import { headers } from 'next/headers'
-import Test from '../components/test/Test'
-import { useGetAllImagesQuery } from '../api/redux/PhotosApi'
-import Image from 'next/image'
+
 
 export type ImageType = {
     id: string,
@@ -17,7 +14,7 @@ function page({ }: any) {
 
 
     return (
-        <div className='mx-auto w-full  mt-10'>
+        <div className='mx-auto w-full  mt-10 bg-white'>
             <div className={'mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full px'}>
                 <h1 className='text-5xl boujee-text font-extrabold text-center py-2 font-logo underline  '>Here Are Some of My Projects</h1>
                 <p className={`text-slate-500 font-bold text-center w-10/12 tracking-wide leading-relaxed mx-auto  py-4 `}>{portfolio_description}</p>

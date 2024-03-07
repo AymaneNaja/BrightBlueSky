@@ -14,7 +14,7 @@ const description = "At our photography studio, quality is not just a standard; 
 
 function WorkingProcess({ }: Props) {
     return (
-        <section className='my-10  mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full'>
+        <section className='my-10  mx-auto w-full xl:w-10/12 lg:w-full md:w-full sm:w-full bg-white'>
             <div className='text-center w-11/12 sm:w-11/12 md:10/12 lg:w-8/12 xl:w-7/12 mx-auto mb-14  '>
                 <h1 className='font-extrabold boujee-text text-5xl pb-4 '>Working Process</h1>
                 <p className='font-semibold text-slate-600 text-lg '>{description}</p>

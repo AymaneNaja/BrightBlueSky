@@ -37,11 +37,11 @@ function Navbar({ }: Props) {
                 <div tabIndex={0} role="button" className=" cursor-pointer pr-2 block sm:block md:hidden lg:hidden xl:hidden scale-110 ">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </div>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3  -translate-x-32 z-20 p-2 shadow  rounded-box w-52 bg-white">
-                    <li className=' font-semibold p-0.5  rounded-md hover:bg-blue-500 hover:text-white transition-all '><a href='/'>Home</a></li>
-                    <li className=' font-semibold p-0.5  rounded-md hover:bg-blue-500 hover:text-white transition-all '><a href='/projects'>Projects</a></li>
-                    <li className=' font-semibold p-0.5  rounded-md hover:bg-blue-500 hover:text-white transition-all '><a href='/services'>Services</a></li>
-                    <li className='font-semibold p-0.5  rounded-md hover:bg-blue-500 hover:text-white transition-all '><a href='/contact'>Contact</a></li>
+                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3  -translate-x-32 z-20 p-2 shadow  rounded-box w-52 bg-white text-black font-bold">
+                    <li className='  p-0.5  rounded-md hover:bg-blue-500  hover:text-white transition-all '><a href='/'>Home</a></li>
+                    <li className=' p-0.5  rounded-md hover:bg-blue-500 hover:text-white transition-all '><a href='/projects'>Projects</a></li>
+                    <li className='  p-0.5  rounded-md hover:bg-blue-500 hover:text-white transition-all '><a href='/services'>Services</a></li>
+                    <li className='p-0.5  rounded-md hover:bg-blue-500 hover:text-white transition-all '><a href='/contact'>Contact</a></li>
 
                 </ul>
             </div>
